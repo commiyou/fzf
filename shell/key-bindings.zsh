@@ -65,7 +65,7 @@ fzf-file-widget() {
   return $ret
 }
 zle     -N   fzf-file-widget
-bindkey '^T' fzf-file-widget
+bindkey '^X^T' fzf-file-widget
 
 # Ensure precmds are run after cd
 fzf-redraw-prompt() {
@@ -94,7 +94,7 @@ fzf-cd-widget() {
   return $ret
 }
 zle     -N    fzf-cd-widget
-bindkey '\ec' fzf-cd-widget
+bindkey '^X\ec' fzf-cd-widget
 
 fzf-edit-command-line() {
   emulate -L zsh
